@@ -31,8 +31,13 @@
         -   Semantic tag - header, footer, main, table
         -   Non-Semantic tag - div, span
     10. Text formatting tags
-    11. List
-    12. Link
-    13. Table
-    14. Form
-    15. Deploy
+    11. Entity
+    12. List
+        -   Ordered list, Unordered list, definition list, nested list
+    13. Link and navigation
+        -   Absolute link vs relative link
+        -   a tag attribute: href, target, title
+    14. Image
+    15. Basic Table
+    16. Basic Form
+    17. Deploy
