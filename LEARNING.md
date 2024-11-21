@@ -1,6 +1,6 @@
-#   HTML Learning
+# HTML Learning
 
-##  Basic HTML
+## Basic HTML
 
     1.  How website works?
         -   clint-server model
@@ -44,7 +44,7 @@
     16. Basic Form
     17. Deploy
 
-##  Intermediate HTML
+## Intermediate HTML
 
     -   Meta tag & SEO
     -   Adding font-awesome icons and google font
@@ -53,6 +53,37 @@
     -   Form data send to your email
     -   Multimedia
     -   HTML5 Elements
+    -   Deploy in netlify.com
 
+## Advanced HTML
 
+    -   More advanced form - <input type="color/range">, datalist, fieldset, legend
+    -   Web accessibilitly
+        -   Use semantic tag
+        -   Use lang attribute
+        -   Use heading tag in order (h1->h2->h3)
+        -   Use alt attribute for image
+        -   Contrast ratio
+        -   Use meaningful link text
+        -   label (for) = input (id)
+        -   Use meta tag: keyword, desc
+    -   HTML5 API:
+        -   Geo location API
+        -   Drag and drop API
+        -   Webstorage API, local storage, session storage
 
+    -   HTML Templates and web components
+    -   Sources for symbols, icons, emojis, colors
+        -   https://symbl.cc/
+        -   https://copychar.cc/
+        -   fontawesome
+        -   Google material icon
+        -   https://emojipedia.org/
+        -   https://colorhunt.co/
+        -   http://colormind.io/
+        -   https://color.adobe.com/
+        -   https://unsplash.com/
+    -   Learning resources
+        -   https://developer.mozilla.org/en-US/docs/Web/HTML
+        -   https://www.w3schools.com/
+        -   https://www.htmldog.com/

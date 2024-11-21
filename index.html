@@ -150,25 +150,73 @@
       <section id="contact">
         <h2>Contact me</h2>
         <form action="https://formspree.io/f/mnnqzodj" method="POST">
+          <fieldset>
+            <legend>Pesonal information</legend>
+            <div>
+              <label for="name">Name :</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div>
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="age">Age :</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                min="18"
+                max="55"
+                required
+              />
+            </div>
+          </fieldset>
+
           <div>
-            <label for="name">Name :</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="age">Age :</label>
+            <label for="favorite">Favorite Color :</label>
             <input
-              type="number"
-              id="age"
-              name="age"
-              min="18"
-              max="55"
+              type="color"
+              id="favorite"
+              name="favorite"
+              value="#ff0000"
               required
             />
           </div>
+
+          <div>
+            <label for="experience"
+              >Number of years learning web development :</label
+            >
+            <input
+              type="range"
+              id="experience"
+              name="experience"
+              min="0"
+              max="10"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="programming">Favorite programming :</label>
+            <input
+              list="languages"
+              id="programming"
+              name="programming"
+              required
+            />
+            <datalist id="languages">
+              <option value="C"></option>
+              <option value="C++"></option>
+              <option value="Python"></option>
+              <option value="Java"></option>
+              <option value="JavaScript"></option>
+            </datalist>
+          </div>
+
           <div>
             <label for="website">Website: </label>
             <input
@@ -187,6 +235,7 @@
               <option value="job">Job Oppertunity</option>
             </select>
           </div>
+
           <div>
             <label for="message">Message :</label>
             <textarea
