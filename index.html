@@ -3,109 +3,244 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Abdullah Al-Bukhari" />
+    <meta name="keywords" content="portfolio, html, abdullah al-Bukhari" />
+    <meta
+      name="description"
+      content="Abdullah Al-Bukhari is a web developer...."
+    />
+
+    <!-- Font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>My Portfolio</title>
+
+    <style>
+      body {
+        background-color: rgb(217, 215, 213);
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <!-- Section: Navbar -->
-    <nav>
-      <ul>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#skills">My Skills</a></li>
-        <li><a href="#projects">My Projects</a></li>
-        <li><a href="#contact">Contact me</a></li>
-      </ul>
-    </nav>
-
-    <!-- Section: intro -->
-    <header id="intro">
-      <h1>Abdullah Al-Bukhari</h1>
-      <p><em>Web developer and Government employee</em></p>
-      <a href="https://github.com/bukharibd"
-        ><img
-          src="./images/bukhari.jpg"
-          alt="Abdullah Al-Bukhari"
-          width="150px"
-      /></a>
-      <hr />
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Section: About me -->
-    <section id="about">
-      <h2>About me</h2>
-      <p><strong>Experience:</strong> 5 years experience in web development</p>
-      <p><strong>Education:</strong> Honers in English</p>
-    </section>
+    <main>
+      <!-- Section: intro -->
+      <section id="intro">
+        <h1>Abdullah Al-Bukhari</h1>
+        <p><em>Web developer and Government employee</em></p>
+        <a href="https://github.com/bukharibd"
+          ><img
+            src="./images/bukhari.jpg"
+            alt="Abdullah Al-Bukhari"
+            width="150px"
+        /></a>
+        <hr />
+      </section>
 
-    <!-- Section: Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <table border="1" cellpadding="5" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Technology</th>
-            <th>Proficiency</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Expert</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Expert</td>
-          </tr>
-          <tr>
-            <td>Javascript</td>
-            <td>Intermediate</td>
-          </tr>
-        </tbody>
-      </table>
-      <dl>
-        <dt>HTML</dt>
-        <dd>HTML is a markup language</dd>
-      </dl>
-    </section>
-    <!-- Section: Project -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <ol>
-        <li>
-          <a target="_blank" href="https://github.com/bukharibd/portfolio-html"
-            >Portfolio website</a
-          >
-        </li>
-        <li>Blog website</li>
-        <li>E-comerce website</li>
-      </ol>
-    </section>
+      <!-- Section: About me -->
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          <strong>Experience:</strong> 5 years experience in web development
+        </p>
+        <p><strong>Education:</strong> Honers in English</p>
+      </section>
 
-    <!-- Section: Contacts -->
-    <section id="contact">
-      <h2>Contact me</h2>
-      <form>
+      <!-- Section: Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td rowspan="2">Expert</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>Javascript</td>
+              <td>Intermediate</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <dl>
+          <dt>HTML</dt>
+          <dd>HTML is a markup language</dd>
+        </dl> -->
         <div>
-          <label for="name">Name :</label>
-          <input type="text" id="name" name="name" required />
+          <h3>Skill Progress</h3>
+          <div>
+            <label for="htmlPorgress">HTML: </label>
+            <progress id="htmlPorgress" value="90" max="100">90%</progress>
+          </div>
+
+          <div>
+            <label for="cssPorgress">CSS: </label>
+            <progress id="htmlPorgress" value="80" max="100">80%</progress>
+          </div>
+
+          <div>
+            <label for="jsPorgress">Javascript: </label>
+            <progress id="htmlPorgress" value="75" max="100">75%</progress>
+          </div>
         </div>
+
         <div>
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required />
+          <h3>Experience Level</h3>
+          <label for="experienceLevel">Experience: </label>
+          <meter id="experienceLevel" min="0" max="10" value="5">5 Years</meter>
         </div>
-        <div>
-          <label for="message">Message :</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-      </form>
-    </section>
-    <!-- Section: Footer -->
+      </section>
+      <!-- Section: Project -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/bukharibd/portfolio-html"
+              >Portfolio website</a
+            >
+          </li>
+          <li>Blog website</li>
+          <li>E-comerce website</li>
+        </ol>
+      </section>
+
+      <video width="320px" controls>
+        <source src="./assets/video/Wildlife .mp4" type="video/mp4" />
+        Your browser doesnot support this type of video.
+      </video>
+
+      <!-- Section: Contacts -->
+      <section id="contact">
+        <h2>Contact me</h2>
+        <form action="https://formspree.io/f/mnnqzodj" method="POST">
+          <div>
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="age">Age :</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="55"
+              required
+            />
+          </div>
+          <div>
+            <label for="website">Website: </label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              pattern="https?://.+"
+            />
+          </div>
+
+          <div>
+            <label for="subject">Subject: </label>
+            <select name="subject" id="subject">
+              <option value="inquiry">Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="job">Job Oppertunity</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message :</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
       <p>Copyright reserved by &copy; Abullah Al-Bukhari</p>
       <p>Developed with &hearts;</p>
       <a href="tel:+88001911020241">📲 Call me</a>
       <a href="mailto:bukharibd@gmail.com">Email me</a>
+      <div>
+        <h3>Follow me</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/bukharibd" target="_blank"
+              ><i class="fa-brands fa-facebook"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/bukharibd" target="_blank"
+              ><i class="fa-brands fa-youtube"></i> Youtube</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/bukharibd" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117658.9123421044!2d89.5322651!3d22.845370949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9071cb47152f%3A0xf04b212290718952!2z4KaW4KeB4Kay4Kao4Ka-!5e0!3m2!1sbn!2sbd!4v1732171685250!5m2!1sbn!2sbd"
+          title="Home Map"
+          width="300"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </footer>
   </body>
 </html>
